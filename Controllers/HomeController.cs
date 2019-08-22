@@ -10,6 +10,12 @@ namespace asp_dotnet_test_project.Controllers
 {
     public class HomeController : Controller
     {
+
+        public IActionResult Hello()
+        {
+            return Json(new { message = "Hi there!" });
+        }
+
         public IActionResult Index()
         {
             return View();
